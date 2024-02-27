@@ -1,0 +1,17 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("https://legendary-digital-network-assets.s3.amazonaws.com/wp-content/uploads/2018/08/14024131/dndcharacters.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    object-fit: fill;
+}
+
+form{
+    background-color:rgb(199, 197, 197) ;
+}

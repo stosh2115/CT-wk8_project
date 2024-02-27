@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="bundle.js" defer></script>
+<link rel="stylesheet" href="./static/main.css">
+<title>RPG Character</title>
+</head>
+<body>
+
+    <h1>RPG Character Creator</h1>
+
+    <form id="character-form" class="rounded shadow m-5 p-5" style="width: 700px;">
+        <label for="character-type">Character Type:</label><br>
+        <select id="character-type" name="character-type">
+            <option value="Ogres">Ogre</option>
+            <option value="Knights">Knight</option>
+            <option value="Peons">Peon</option>
+            <option value="Archer">Archer</option>
+        </select><br>
+
+        <label for="character-name">Character Name:</label><br>
+        <input type="text" id="character-name" name="character-name" required><br>
+
+        <button type="button" onclick="createCharacter()">Create Character</button><br>
+    </form>
+
+    <form id="weapon-form" class="rounded shadow m-5 p-5" style="width: 700px">
+        <label for="weapon-name">Weapon Type:</label><br>
+        <input type="text" id="weapon-name" name="weapon-name" required><br>
+
+        <label for="weapon-damage">Weapon Damage:</label><br>
+        <input type="number" id="weapon-damage" name="weapon-damage" required><br>
+
+        <button type="button" onclick="createWeapon()">Create Weapon</button><br>
+    </form>
+
+    <!-- Area to display our Tasks -->
+    <h1>Character List</h1>
+    <div id="taskList">
+        <ul id="tasks"></ul>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
